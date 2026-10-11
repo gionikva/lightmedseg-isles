@@ -1,5 +1,5 @@
 # Description
-This repo contains the training code for the 2026 ISLES challenge.
+This repo contains the model & training code for [lightmedseg-isles](https://arxiv.org/abs/2609.09634).
 ## Setup
 To install all the dependencies, run `pip install -r requirements.txt`.\
 \
@@ -25,5 +25,6 @@ The following is a description of all the parameters:
   -a, --domain-augment          Enable domain augmentation.
   -p, --resume                  Resume training from the last epoch.
 ```
-The best performance model was trained with the folowing command: \
+The best performance model (not the final used in the paper) was trained locally with the following command: \
 `python train_model.py -o weights/base_medium_deep -e 100 -b 1 --lr-range 2e-4:1e-9 --deep-supervision -m base -s medium -ca`.
+Note: This repository does not contain the TTA or filtering code used in the final paper.
