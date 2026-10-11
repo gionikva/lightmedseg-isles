@@ -25,6 +25,6 @@ The following is a description of all the parameters:
   -a, --domain-augment          Enable domain augmentation.
   -p, --resume                  Resume training from the last epoch.
 ```
-The best performance model (not the final used in the paper) was trained locally with the following command: \
+The best performance model (not the final one used in the paper) was trained locally with the following command: \
 `python train_model.py -o weights/base_medium_deep -e 100 -b 1 --lr-range 2e-4:1e-9 --deep-supervision -m base -s medium -ca`.
 Note: This repository does not contain the TTA or filtering code used in the final paper.
